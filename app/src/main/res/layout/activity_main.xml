@@ -35,9 +35,10 @@
             android:textSize="30sp"/>
 
     <Button
+            android:id="@+id/roll_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="@string/roll"/>
+            android:text="@string/str_roll" />
 
 </LinearLayout>
