@@ -9,5 +9,17 @@ macOS 10.14.
 Date 2019.06.11.
 
 To push an existing repository from the command line
+
 git remote add origin https://github.com/vianalista/DiceRoller.git
+
 git push -u origin master
+
+-----------------------
+
+Source Code Examples for:
+- Kotlin.
+- Layout.
+- Connecting the Button.
+- findViewById.
+- OnClickListener.
+- Finding Views.
