@@ -10,19 +10,22 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var diceImage: ImageView
+    private var diceNumber: Int = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var myRollButton: Button = findViewById(R.id.roll_button)
+        val myRollButton: Button = findViewById(R.id.roll_button)
 
         //myRollButton.text = "Let's roll"
         myRollButton.setOnClickListener {
             //Toast.makeText(this, "Does something when the button is clicked.", Toast.LENGTH_SHORT).show()
-
-            var diceNumber:Int
             diceNumber = changeText()
             changeImage(diceNumber)
         }
+
+        diceImage = findViewById(R.id.idImageView01_dice)
     }
 
 
@@ -35,7 +38,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun changeImage(num: Int) {
-        val diceImage: ImageView = findViewById(R.id.idImageView01_dice)
 
         val image = when (num) {
             1 -> R.drawable.dice_1
